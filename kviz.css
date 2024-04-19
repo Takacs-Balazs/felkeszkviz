@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(224, 230, 236);
+}
+.konténer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.kártya {
+    width: calc(40% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.lehetőségek {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lehetőség {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lehetőség:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ccc;
+}
+
+@media (max-width: 767px) {
+    .kártya {
+        width: calc(60% - 20px);
+    }
+
+    
+}
